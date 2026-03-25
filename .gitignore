@@ -1,0 +1,25 @@
+# Gradle
+.gradle/
+build/
+*.apk
+*.aab
+*.bundle
+
+# Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+local.properties
+captures/
+.cxx/
+
+# OS
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Build
+.build/
+out/

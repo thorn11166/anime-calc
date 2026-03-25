@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Cute calc icon -->
+    <group
+        android:translateX="25"
+        android:translateY="25">
+
+        <!-- Calculator body -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M8,2 L52,2 A6,6 0 0,1 58,8 L58,52 A6,6 0 0,1 52,58 L8,58 A6,6 0 0,1 2,52 L2,8 A6,6 0 0,1 8,2 Z" />
+
+        <!-- Display -->
+        <rect
+            android:left="8"
+            android:top="8"
+            android:right="52"
+            android:bottom="20"
+            android:fillColor="#FF1493" />
+
+        <!-- Button grid -->
+        <circle
+            android:cx="14"
+            android:cy="32"
+            android:r="3"
+            android:fillColor="#00BFFF" />
+
+        <circle
+            android:cx="30"
+            android:cy="32"
+            android:r="3"
+            android:fillColor="#00BFFF" />
+
+        <circle
+            android:cx="46"
+            android:cy="32"
+            android:r="3"
+            android:fillColor="#FFD700" />
+
+        <circle
+            android:cx="14"
+            android:cy="46"
+            android:r="3"
+            android:fillColor="#00BFFF" />
+
+        <circle
+            android:cx="30"
+            android:cy="46"
+            android:r="3"
+            android:fillColor="#00BFFF" />
+
+        <circle
+            android:cx="46"
+            android:cy="46"
+            android:r="3"
+            android:fillColor="#FFD700" />
+
+    </group>
+
+</vector>

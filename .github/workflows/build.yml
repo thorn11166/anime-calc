@@ -1,0 +1,65 @@
+name: Android Build & Test
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'adopt'
+        cache: gradle
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+
+    - name: Build with Gradle
+      run: ./gradlew build --stacktrace
+
+    - name: Build Release APK
+      run: ./gradlew assembleRelease
+
+    - name: Upload APK as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: app-release
+        path: app/build/outputs/apk/release/app-release.apk
+
+    - name: Check APK size
+      run: |
+        APK_PATH="app/build/outputs/apk/release/app-release.apk"
+        SIZE=$(du -h "$APK_PATH" | cut -f1)
+        echo "APK Size: $SIZE"
+        echo "APK_SIZE=$SIZE" >> $GITHUB_ENV
+
+    - name: Comment PR with APK size
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '✅ Build successful!\n\n📦 **APK Size:** ${{ env.APK_SIZE }}'
+          })
+
+    - name: Run tests
+      run: ./gradlew test
+
+    - name: Generate test report
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: app/build/reports/

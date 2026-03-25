@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Anime Colors -->
+    <color name="accent_pink">#FF1493</color>
+    <color name="accent_cyan">#00BFFF</color>
+    <color name="accent_gold">#FFD700</color>
+    <color name="accent_purple">#6A4C93</color>
+
+    <!-- Light Theme -->
+    <color name="background_light">#FFFFFF</color>
+    <color name="surface_light">#F5F5FF</color>
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#666666</color>
+
+    <!-- Dark Theme -->
+    <color name="background_dark">#0F0F1E</color>
+    <color name="surface_dark">#1F1F2E</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_dark">#CCCCCC</color>
+
+    <!-- Status Bar -->
+    <color name="primary">#FF1493</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

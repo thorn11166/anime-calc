@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportWidth="60"
+    android:viewportHeight="60">
+
+    <!-- Head -->
+    <path
+        android:fillColor="#FF1493"
+        android:pathData="M30,10 A20,20 0 0,1 50,30 A20,20 0 0,1 30,50 A20,20 0 0,1 10,30 A20,20 0 0,1 30,10 Z" />
+
+    <!-- Left Eye -->
+    <circle
+        android:cx="24"
+        android:cy="26"
+        android:r="3"
+        android:fillColor="@android:color/white" />
+
+    <!-- Right Eye -->
+    <circle
+        android:cx="36"
+        android:cy="26"
+        android:r="3"
+        android:fillColor="@android:color/white" />
+
+    <!-- Left Pupil -->
+    <circle
+        android:cx="24"
+        android:cy="26"
+        android:r="1.5"
+        android:fillColor="#000000" />
+
+    <!-- Right Pupil -->
+    <circle
+        android:cx="36"
+        android:cy="26"
+        android:r="1.5"
+        android:fillColor="#000000" />
+
+    <!-- Smile -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="1.5"
+        android:pathData="M24,34 Q30,38 36,34"
+        android:strokeLineCap="round"
+        android:fillColor="@android:color/transparent" />
+
+    <!-- Blush Left -->
+    <circle
+        android:cx="18"
+        android:cy="32"
+        android:r="2"
+        android:fillColor="#FFB6C1" />
+
+    <!-- Blush Right -->
+    <circle
+        android:cx="42"
+        android:cy="32"
+        android:r="2"
+        android:fillColor="#FFB6C1" />
+
+</vector>
