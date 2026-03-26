@@ -22,4 +22,7 @@
     <color name="primary">#FF1493</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+
+    <!-- Launcher Icon -->
+    <color name="ic_launcher_background">#FF6200EE</color>
 </resources>
