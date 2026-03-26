@@ -5,38 +5,30 @@
     android:viewportWidth="60"
     android:viewportHeight="60">
 
-    <!-- Head -->
+    <!-- Head (Circle) -->
     <path
         android:fillColor="#FF1493"
         android:pathData="M30,10 A20,20 0 0,1 50,30 A20,20 0 0,1 30,50 A20,20 0 0,1 10,30 A20,20 0 0,1 30,10 Z" />
 
-    <!-- Left Eye -->
-    <circle
-        android:cx="24"
-        android:cy="26"
-        android:r="3"
-        android:fillColor="@android:color/white" />
+    <!-- Left Eye (White) -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M20,20 A4,4 0 0,1 28,20 A4,4 0 0,1 20,28 A4,4 0 0,1 20,20 Z" />
 
-    <!-- Right Eye -->
-    <circle
-        android:cx="36"
-        android:cy="26"
-        android:r="3"
-        android:fillColor="@android:color/white" />
+    <!-- Right Eye (White) -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M32,20 A4,4 0 0,1 40,20 A4,4 0 0,1 32,28 A4,4 0 0,1 32,20 Z" />
 
-    <!-- Left Pupil -->
-    <circle
-        android:cx="24"
-        android:cy="26"
-        android:r="1.5"
-        android:fillColor="#000000" />
+    <!-- Left Pupil (Black) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M23,24 A1.5,1.5 0 0,1 26,24 A1.5,1.5 0 0,1 23,24 Z" />
 
-    <!-- Right Pupil -->
-    <circle
-        android:cx="36"
-        android:cy="26"
-        android:r="1.5"
-        android:fillColor="#000000" />
+    <!-- Right Pupil (Black) -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M35,24 A1.5,1.5 0 0,1 38,24 A1.5,1.5 0 0,1 35,24 Z" />
 
     <!-- Smile -->
     <path
@@ -47,17 +39,13 @@
         android:fillColor="@android:color/transparent" />
 
     <!-- Blush Left -->
-    <circle
-        android:cx="18"
-        android:cy="32"
-        android:r="2"
-        android:fillColor="#FFB6C1" />
+    <path
+        android:fillColor="#FFB6C1"
+        android:pathData="M14,32 A2,2 0 0,1 18,32 A2,2 0 0,1 14,36 A2,2 0 0,1 14,32 Z" />
 
     <!-- Blush Right -->
-    <circle
-        android:cx="42"
-        android:cy="32"
-        android:r="2"
-        android:fillColor="#FFB6C1" />
+    <path
+        android:fillColor="#FFB6C1"
+        android:pathData="M42,32 A2,2 0 0,1 46,32 A2,2 0 0,1 42,36 A2,2 0 0,1 42,32 Z" />
 
 </vector>
