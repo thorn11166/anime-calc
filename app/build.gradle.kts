@@ -39,6 +39,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 
     packagingOptions {
@@ -59,6 +60,9 @@ dependencies {
 
     // Material Design
     implementation("com.google.android.material:material:1.11.0")
+
+    // ViewPager2
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
 
     // RecyclerView
     implementation("androidx.recyclerview:recyclerview:1.3.2")
